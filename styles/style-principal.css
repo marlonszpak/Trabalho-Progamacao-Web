@@ -1,0 +1,348 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Outfit:wght@100..900&family=Varela+Round&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Outfit, Arial, Helvetica, sans-serif;
+}
+.body{
+    background-color: rgb(171, 198, 224);
+}
+.cabecalho{
+    height: 120px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: rgb(233, 53, 53);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    margin-bottom: 20px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 70vw;
+    height: 150px;
+}
+h1{
+    color: white;
+    height: 130px;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.simbolo{
+    height: 110px;
+    width: 140px;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+}
+.dropdown a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.dropdown-menu{
+    background-color: white;
+    position: absolute;
+    width: 140px;
+    display: none;
+}
+
+.dropdown-menu a{
+    display: block;
+    color: black;
+}
+.dropdown-menu a:hover{
+    border: 1px solid black;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+li{
+    color: #ffffff;
+    position: relative;
+    text-decoration: none;
+    height: 30px;
+    list-style-type: none; 
+    margin: 0px 20px 0px 20px;
+    transition: 1s;
+ }
+  
+li::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+  
+li:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.slider{
+    margin: 0 auto;
+    width: 1000px;
+    height: 550px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+}
+.slides{
+    width: 400%;
+    height: 550px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    transition: 1s;
+}
+
+.slide img{
+    width: 1000px;
+    height: 550px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 1000px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: white;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~.first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+.navigation-auto div{
+    border: 2px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 1000px;
+    margin-top: 510px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: white;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: white;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: white;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: white;
+}
+
+
+.img-sair{
+    height: 30px;
+    width: 30px;
+}
+img{
+    object-fit: cover;
+    height: 400px;
+    width: 500px;
+}
+
+.btn-sair{
+    width: 20vw;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.linha{
+    height: 30px;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lista-carros{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.car{
+    border: 1px solid #ccc ;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    text-align:unset;
+    margin:auto;
+    background-color: #ffffff;
+}
+.imagem{
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 100px solid gr;
+}
+
+.categorias{
+    width: 100vw;
+    height: 400px;
+    background-color: rgb(255, 255, 255) 250, 239;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.categoria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.categoria a{
+    height: 250px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.categoria a:hover{
+    border: 1px solid black;
+}
+.img-categoria{
+    max-width: 295px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    margin: 10px;
+}
+
+.subtitulo{
+    margin: auto;
+    height: 80px;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(248, 66, 66);
+    background-color: rgb(255, 255, 255);
+    margin-top: 50px;
+}
+
+footer{
+    background-color: rgb(65, 64, 64);
+    width: 100vw;
+    height: 300px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sobre{
+    width: 25%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 15px;
+}
+.sobre p{
+    color: white;
+}
+.sobre h2{
+    color: white;
+}
+.contatos{
+    width: 25%;
+}
+.contatos div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin: 20px 40px;
+    gap: 10px;
+}
+.contatos p{
+    color: white;
+}
+.redes-sociais{
+    width: 30px;
+    height: 30px;
+}

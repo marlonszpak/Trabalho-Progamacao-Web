@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style-checkout.css">
+    <link rel="shortcut icon" href="img/djanhos car.png" type="image/x-icon">
+    <title>Djanho's Car</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="principal.html"><img src="img/djanhos car.png" alt="" class="simbolo"> </a> 
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="">Categorias  &#9776;</a>
+    
+                    <div class="dropdown-menu">
+                        <a href="categoria-sedan.html">Sedan</a>
+                        <a href="categoria-hatch.html">Hatch</a>
+                        <a href="categoria-suv.html">SUV</a>
+                        <a href="categoria-utilitario.html">Utilitario</a>
+                    </div>
+                </li> 
+                <li><a href="principal.html">Pagina Inicial</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="index-contato.html">Contato</a></li>
+            </ul>
+            <a href="login.html" class="btn-sair">
+                <img class="img-sair" src="img/right-to-bracket-solid.svg" alt="sair">
+                <p>Sair</p>
+            </a>
+        </nav>
+    </header>
+
+    <div class="formulario">
+            <section>
+                <form id="form">
+                    <h3>Nome Completo</h3>
+                    <input type="text" name="username" placeholder="Nome Completo" id="username">
+                    <p class="error" id="nameError"></p>
+                    <h3>Email</h3>
+                    <input type="email" name="username" placeholder="Email" id="email">
+                    <p class="error" id="emailError"></p>
+                    <h3>Celular</h3>
+                    <input type="tel" name="username" placeholder="Celular" id="celular" >
+                    <p class="error" id="celularError"></p>
+                    <h3>Quantos dias vai alugar</h3>
+                    <input type="number" name="username" placeholder="Quantos dias vai alugar" id="dias">
+                    <p class="error" id="diasError"></p>
+                    <input type="submit" value="Alugar" class="btn" onclick="validarCheckout()">
+                </form>
+                <div class="check">
+                    <p id="texto-check"></p>
+                </div>
+            </section>
+    </div>
+
+    <footer>
+        <div class="sobre">
+            <h2>Djanho's Car</h2>
+            <a href="sobre.html">Sobre</a>
+            <a href="index-contato.html">Contato</a>
+            <p>Trabalhe Conosco</p>
+            <p>Suporte</p>
+        </div>
+        <div class="contatos">
+            <div>
+                <img src="img/whatsapp (1).png" alt="" class="redes-sociais">
+                <p>(42) 99999-9999</p>
+            </div>
+            <div>
+                <img src="img/instagram.png" alt="" class="redes-sociais">
+                <p>www.instagram.com/DjanhosCar</p>
+            </div>
+            <div>
+                <img src="img/facebook.png" alt="" class="redes-sociais">
+                <p>www.facebook.com/DjanhosCar</p>
+            </div>
+            <div>
+                <img src="img/linkedin.png" alt="" class="redes-sociais">
+                <p>www.linkedin.com/in/DjanhosCar</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script-checkout.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        $('#celular').mask('(00)00000-0000');
+        });
+    </script>
+</body>
+</html>

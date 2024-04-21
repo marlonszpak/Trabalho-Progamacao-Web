@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Carros</title>
+    <link rel="stylesheet" href="styles/style-login.css">
+    <link rel="shortcut icon" href="img/djanhos car.png" type="image/x-icon">
+    <script src="script-login.js"></script>
+</head>
+<body>
+    <main class="principal">
+        <figure class="figura">
+            <img src="img/djanhos car.png" alt="carro" class="imagem">
+        </figure>
+        <aside class="formulario">
+            <div>
+                <section>
+                    <h1>LOGIN</h1>
+                    <form id="form">
+                        <h3>Usuario</h3>
+                        <input type="text" name="username" placeholder="Nome de Usuário" id="username">
+                        <p class="error" id="nameError"></p>
+                        <h3>Senha</h3>
+                        <input type="password" name="password" placeholder="Senha" id="password">
+                        <p class="error" id="passwordError"></p>
+                        <input type="submit" value="Entrar" class="btn" onclick="validarLogin()">
+                        <a href="">Esqueceu a senha?</a>
+                    </form>
+                </section>
+            </div>
+        </aside>
+    </main>
+</body>
+</html>

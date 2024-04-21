@@ -1,0 +1,44 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style-contato.css">
+    <link rel="shortcut icon" href="img/djanhos car.png" type="image/x-icon">
+    <title>Djanho's CAR</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="img/djanhos car.png" alt="logo">
+        </div>
+        <nav class="menu">
+
+            <div class="nome">
+                <h2><b>Djanho's CAR</b></h2>
+            </div>
+
+        </nav>
+    </header>
+
+    <div class="contact-form">
+        <h2>Suporte</h2>
+        <form action="/submit_form" method="post">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+            <input type="submit" value="ENVIAR">
+      
+            <p><br>
+           <a href="principal.html">voltar</a>
+        </form>
+    </div>
+    
+</body>
+</html>
